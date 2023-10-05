@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="index.js" defer></script>
+    <title>Projeto_2_ebac</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="container_header">
+            <img src="/images/logo.png" alt="logo site">
+            <h1>Calculadora de médias</h1>
+        </header>
+
+        <!-- formularios -->
+        <section class="container_form">
+            <form id="form">
+                <input type="text" required name="nome" placeholder="nome da atividade" id="atividade">
+                <input type="number" required name="number" placeholder="nota" min="0" max="10" id="nota">
+
+                <button type="submit">Adicionar +</button>
+            </form>
+        </section>
+
+        <!-- tabelas -->
+        <table cellspacing="0">
+            <section class="container_thead">
+                <thead>
+                    <tr>
+                        <th>Nome da atividade</th>
+                        <th>Nota</th>
+                        <th>Aprovado?</th>
+                    </tr>
+                </thead>
+            </section>
+
+            <section class="container_tbody">
+                <tbody id="tbody">
+
+                </tbody>
+
+                <section class="container_tfoot">
+                    <tfoot>
+                        <tr>
+                            <td id="mediaText"></td>
+                            <td id="resultado"></td>
+                            <td id="apro-repr"></td>
+                        </tr>
+                    </tfoot>
+                </section>
+            </section>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
